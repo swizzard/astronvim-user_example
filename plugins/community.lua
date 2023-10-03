@@ -5,7 +5,6 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.programming-language-support.nvim-jqx" },
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
   { import = "astrocommunity.git.octo-nvim" },
   { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.motion.harpoon"  },

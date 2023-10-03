@@ -94,8 +94,12 @@ return {
         end,
         on_highlights = function(hl, _c)
           hl.Identifier = {
-            fg = "#FFFFFF",
-            bg = "#000000"
+            bg = "#000000",
+            fg = "#999999"
+          }
+          hl['@string'] = {
+            bg = "#1a1b26",
+            fg = "#8790c8"
           }
           hl.NotifyDEBUGBorder = {
             bg = "#1a1b26",
@@ -122,8 +126,10 @@ return {
   {"vimwiki/vimwiki",
    lazy = false
   },
-  {"github/copilot.vim",
-    lazy = false
+  {"zbirenbaum/copilot.lua",
+    cmd = 'Copilot',
+    event = 'InsertEnter',
+    config = function() require('copilot').setup() end,
   },
   {"zbirenbaum/copilot-cmp", config = function () require('copilot_cmp').setup() end },
   -- {
